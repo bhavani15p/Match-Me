@@ -50,7 +50,7 @@ function flipCard(e) {
 function matchCards() {
     if (clickOne.innerHTML === clickTwo.innerHTML) {
         matchFlip++;
-        if (matchFlip === 12) {
+        if (matchFlip === 8) {
           setTimeout(() => {
               return shuffle();        
           }, 1000);
@@ -177,8 +177,3 @@ shuffleCards()
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
-
-
-
-
-
